@@ -11,6 +11,9 @@ test_data$cum_tot_per_mil <- test_data$`Cumulative total per thousand` / 1000
 test_data$`iso-a3` <- test_data$`ISO code`
 test_data$cum_tot_per_thousand <- test_data$`Cumulative total per thousand`
 
+## remove france------
+test_data <- test_data[test_data$`iso-a3` != "FRA", ]
+
 
 ## graphic
 
